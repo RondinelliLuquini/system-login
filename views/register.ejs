@@ -1,0 +1,96 @@
+<style>
+
+    body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(45deg, cyan, magenta);
+    text-align: center;
+}
+
+.tela-register{
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 80px;
+    border-radius: 15px;
+    color: white;
+}
+input{
+    padding: 15px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+button{
+    background-color: dodgerblue;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    border-radius: 10px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(2, 4, 5);
+}
+
+#login{
+    text-decoration: none;
+    color: white;
+}
+</style>
+<script>
+    var password = document.getElementById("password")
+  , confirm_password = document.getElementById("confirm_password");
+
+function validatePassword(){
+  if(password.value != confirm_password.value) {
+    confirm_password.setCustomValidity("Senhas diferentes!");
+  } else {
+    confirm_password.setCustomValidity('');
+  }
+}
+
+password.onchange = validatePassword;
+confirm_password.onkeyup = validatePassword;
+
+
+</script>
+
+<body>
+
+<div class="tela-register">
+
+<h1>Cadastro</h1>
+<form action="/register" method="POST" > 
+<br>
+<div>
+    <label for='name'></label>
+    <input type="text" id="name" name="name" required placeholder="Nome">
+</div>
+<br>
+<div>
+    <label for='email'></label>
+    <input type="email" id="email" name="email" required placeholder="Email">
+</div>
+<br>
+<div>
+    <label for='password'></label>
+    <input type="password" placeholder="Senha" id="password" required name="password">
+    
+</div>
+
+<br>
+<button type="submit">Cadastrar</button>
+
+</form>
+<br><br>
+<a id="login" href="/login">Login</a>
+
+</div>
+
+</body>
