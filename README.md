@@ -8,7 +8,7 @@ Neste projeto foi desenvolvido um sistema simples de login, cadastro e autentica
 ![cadastro_2](./assets/passport-config.gif "Exemplo da tela de cadastro")
 <br>
 ## Login
-<br>
+
 ![loginsucesso_1](./assets/login.gif "Exemplo da tela de login")
 <br>
 In this project we have a basic login system with registration and authentication. It was used the EJS engine for Node.JS application, the Express framework for server development and basic CSS styling. It was implemented security features using BCRYPT to encrypt passwords, as well as restrict the access of users to the login and registration pages after they are logged in on the system, besides that we also have warning messages for invalid password and/or not registered users.
