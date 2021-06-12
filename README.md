@@ -15,12 +15,12 @@ In this project we have a basic login system with registration and authenticatio
 
 Verificação no cadastro / Authentication
 
-![verificação_cad_2](.assets/verificacao.gif "Exemplo de tela de verificação")
+![verificação_cad_2](./assets/verificacao.gif "Exemplo de tela de verificação")
 ![block_login_1](./assets/block.gif "Exemplo de tela de verificação 2")
 
 ## Instruções / Instructions:
 
-Inicialize sua IDE com os comandos:
+Inicialize sua IDE com os comandos:<br>
 Start your application with:
 
 ```
